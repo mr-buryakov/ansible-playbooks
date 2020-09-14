@@ -1,0 +1,17 @@
+---
+# Playbook to create local user and add to groups
+
+- hosts: windows
+
+  tasks:
+    - name: create user
+      win_user:
+        name: vun
+        password: 'Cthdfyn19151'
+        password_never_expires: true
+        account_disabled: no
+        account_locked: no
+        password_expired: no
+        state: present
+        groups:
+          - Администраторы

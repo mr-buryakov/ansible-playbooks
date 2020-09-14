@@ -1,0 +1,11 @@
+---
+- hosts: windows
+  tasks:
+
+  - name: Uninstall package dependencies
+    win_chocolatey:
+      name:
+       - winrar
+       - 7zip
+      state: absent
+

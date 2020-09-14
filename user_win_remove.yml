@@ -6,8 +6,8 @@
   tasks:
     - name: create user
       win_user:
-        name: vun
-        password: 'Cthdfyn19151'
+        name: Username
+        password: "P@55w0rd"
         password_never_expires: true
         account_disabled: no
         account_locked: no
